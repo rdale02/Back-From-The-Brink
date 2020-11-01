@@ -1,7 +1,7 @@
 public class Tile {
     /**
      * @author Patrick & Ronan
-     * Patrick is responsible for the general structure of the class and methods
+     * Patrick is responsible for the general structure of this class and its methods, as well as its Class Diagram
      * Ronan is responsible for implementation of validation, as well as integrating the structure into the prototype
      */
     private String name;
@@ -59,7 +59,8 @@ public class Tile {
         return false;
     }
     public void setPrice(Resource price) {
-        this.price = price;
+        if(!price.equals(null))
+            this.price = price;
     }
     public void setTileType(TileType type) {
         this.type= type;

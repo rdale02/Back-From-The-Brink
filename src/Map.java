@@ -95,8 +95,6 @@ public class Map
                 turn(p,map);
             }
         }
-
-
     }
     private static void turn(Player p, Tile[] map)
     {

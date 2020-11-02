@@ -33,9 +33,10 @@ public class Initiative {
         this.turnsLive = 0;
         this.cost = cost;
         this.level = level;
-        if(level == PriorityLevel.Low)
-        {
-            this.turnsToComplete =0;
+        if (level == PriorityLevel.Low) {
+            this.turnsToComplete = 0; //ensures that the correct timescale for Low Priority is set
+        } else {
+            this.turnsToComplete = turnsToComplete;
         }
 
     }
@@ -79,5 +80,6 @@ public class Initiative {
     {
         this.completed = true;
     }
+
 
 }

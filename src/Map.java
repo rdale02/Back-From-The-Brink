@@ -100,8 +100,8 @@ public class Map
     {
         Random rnd = new Random();
         int movement = rnd.nextInt(6) + rnd.nextInt(6);
-        System.out.print(p.getNickname() + " moves " + movement + " spaces.\n");
         p.move(movement, map);
+        System.out.print(p.getNickname() + " moves " + movement + " spaces. and landed on " + map[p.getPosition()].getName() + "\n");
     }
     public boolean checkBalance(Tile t, Player p)
     {

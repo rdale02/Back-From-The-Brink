@@ -94,8 +94,12 @@ public class Player {
     {
         return this.nickname;
     }
-    public Wallet getWallet()
-    {
+
+    public Wallet getWallet() {
         return this.wallet;
+    }
+
+    public int getPosition() {
+        return this.position;
     }
 }
